@@ -1,6 +1,7 @@
 import easy.Exercicio02_easy;
 import easy.Exercicio03_easy;
 import easy.Exercicio04_easy;
+import easy.Exercicio05_easy;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -27,5 +28,44 @@ public class TestesUnitariosEasy {
         long numeroDigitado = 2;
         long numeroDobrado = 4;
         Assert.assertEquals(numeroDobrado, exercicio04Easy.calcularDobro(numeroDigitado));
+    }
+
+    @Test
+    public void TesteUnitarioEx5_CalcularSoma(){
+        Exercicio05_easy exercicio05Easy = new Exercicio05_easy();
+        long primeiroValor = 1;
+        long segundoValor = 2;
+        long terceiroValor = 3;
+
+        Assert.assertEquals(6, exercicio05Easy.calcularSoma(primeiroValor, segundoValor, terceiroValor));
+    }
+
+    @Test
+    public void TesteUnitarioEx5_CalculaSubtracao(){
+        Exercicio05_easy exercicio05Easy = new Exercicio05_easy();
+        long primeiroValor = 1;
+        long segundoValor = 2;
+
+        Assert.assertEquals(1, exercicio05Easy.calcularSubtracao(primeiroValor, segundoValor, 0));
+    }
+
+    @Test
+    public void TesteUnitarioEx5_CalcularMultiplicacao(){
+        Exercicio05_easy exercicio05Easy = new Exercicio05_easy();
+        long primeiroValor = 1;
+        long segundoValor = 2;
+        long terceiroValor = 3;
+
+        Assert.assertEquals(6, exercicio05Easy.calcularMultiplicacao(primeiroValor, segundoValor, terceiroValor));
+    }
+
+    @Test
+    public void TesteUnitarioEx5_CalcularMedia(){
+        Exercicio05_easy exercicio05Easy = new Exercicio05_easy();
+        long primeiroValor = 6;
+        long segundoValor = 6;
+        long terceiroValor = 6;
+
+        Assert.assertEquals(72, exercicio05Easy.calcularMedia(primeiroValor, segundoValor, terceiroValor));
     }
 }
