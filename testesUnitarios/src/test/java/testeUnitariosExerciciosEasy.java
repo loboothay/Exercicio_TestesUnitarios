@@ -2,7 +2,7 @@ import easy.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestesUnitariosEasy {
+public class testeUnitariosExerciciosEasy {
     @Test
     public void TesteUnitarioEx2_TestePalavraDigitada(){
         Exercicio02_easy exercicio02Easy = new Exercicio02_easy();

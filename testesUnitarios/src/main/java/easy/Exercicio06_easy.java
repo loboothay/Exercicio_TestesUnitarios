@@ -1,7 +1,5 @@
 package easy;
 
-import javax.swing.*;
-
 public class Exercicio06_easy {//inicio classe
 
     public String verificarAprovacaoAluno(double primeiraNota, double segundaNota) {// incio main
